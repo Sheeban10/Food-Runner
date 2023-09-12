@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Food Runer</string>
+    <string name="shared_preference">Apps Data</string>
+    <string name="foodrunner">FoodRunner</string>
+    <string name="enter_number">Mobile Number(10 digits)</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Don\'t have an account? Sign up now</string>
+    <string name="register_yourself">Register Yourself</string>
+    <string name="name_min_3_character">name(Min. 3 character)</string>
+    <string name="email_address">Email Address</string>
+    <string name="delivery_addres">Delivery Address</string>
+    <string name="password_min">Password(Min. 4 characters)</string>
+    <string name="password_cnfrm">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="enter_your_">Enter your registered mobile number and email below:</string>
+    <string name="next">Next</string>
+</resources>
