@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/orange">
+    android:background="@color/skin_yellow">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/imgLogin"
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/imgLogin"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="20dp"
@@ -30,6 +30,7 @@
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:src="@drawable/phone"
+            android:layout_margin="4dp"
             android:padding="1dp"/>
 
         <EditText
@@ -50,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/ll1"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
@@ -60,6 +61,7 @@
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:src="@drawable/lock"
+            android:layout_margin="4dp"
             android:padding="1dp"/>
 
         <EditText
@@ -86,7 +88,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:backgroundTint="@color/dark_orange"/>
+        android:backgroundTint="@color/cyan"/>
 
     <TextView
         android:id="@+id/tvForgotPw"
@@ -103,13 +105,13 @@
         android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up"
-        android:textSize="15sp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
-        android:layout_marginTop="10dp"/>
+        android:textSize="15sp" />
 
 
 </RelativeLayout>

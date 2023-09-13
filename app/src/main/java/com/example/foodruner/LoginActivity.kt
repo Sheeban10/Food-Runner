@@ -25,22 +25,11 @@ class LoginActivity: AppCompatActivity(){
 
         if (isLoggedIn){
             startActivity(Intent(this, MainActivity::class.java))
-//            intent.putExtra("Number", mobileNumber)
-//            intent.putExtra("Password", password)
         } else setContentView(view)
 
 
         binding.btnLogin.setOnClickListener {
-            val mobileNumber= binding.etLoginNumber.text.toString()
-            val password = binding.etLoginPassword.text.toString()
-            if (mobileNumber == "12345" && password =="qwert")
-            {
-                startActivity(Intent(this, MainActivity::class.java))
-                intent.putExtra("Number", mobileNumber)
-                intent.putExtra("Password", password)
-                savePreference()
-            } else Toast.makeText(this@LoginActivity, "Incorrect Credentials", Toast.LENGTH_LONG)
-            .show()
+
         }
 
         binding.tvForgotPw.setOnClickListener {

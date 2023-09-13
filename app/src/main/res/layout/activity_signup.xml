@@ -2,13 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange">
+    android:background="@color/skin_yellow">
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/back" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/back"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -16,6 +20,7 @@
         android:text="@string/register_yourself"
         android:layout_marginStart="50dp"
         android:textSize="18sp"
+        android:layout_marginTop="4dp"
         android:textColor="@color/white"/>
 
     
@@ -26,12 +31,13 @@
         android:layout_marginTop="70dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
+            android:layout_margin="4dp"
             android:src="@drawable/person"/>
         <EditText
             android:layout_width="match_parent"
@@ -49,12 +55,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:orientation="horizontal">
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="match_parent"
+        android:layout_margin="4dp"
         android:src="@drawable/email"/>
     <EditText
         android:layout_width="match_parent"
@@ -73,13 +80,14 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:src="@drawable/phone"/>
+            android:src="@drawable/phone"
+            android:layout_margin="4dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -88,6 +96,7 @@
             android:background="@android:color/transparent"
             android:padding="3dp"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/ll4"
         android:layout_below="@+id/ll3"
@@ -96,12 +105,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
+            android:layout_margin="4dp"
             android:src="@drawable/location"/>
         <EditText
             android:layout_width="match_parent"
@@ -119,12 +129,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
+            android:layout_margin="4dp"
             android:src="@drawable/lock"/>
         <EditText
             android:layout_width="match_parent"
@@ -143,12 +154,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@color/white"
+        android:background="@drawable/tv_circular"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="match_parent"
+            android:layout_margin="4dp"
             android:src="@drawable/lock"/>
         <EditText
             android:layout_width="match_parent"
@@ -168,7 +180,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:backgroundTint="@color/dark_orange" />
+        android:backgroundTint="@color/cyan" />
 
 
 
