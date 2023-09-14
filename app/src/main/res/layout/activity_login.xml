@@ -34,15 +34,15 @@
             android:padding="1dp"/>
 
         <EditText
-            android:id="@+id/etLoginNumber"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/email_address"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
             android:padding="6dp"
-            android:textSize="18sp"
-            android:hint="@string/enter_number"
-            android:inputType="phone"
-            android:maxLength="10"
-            android:background="@android:color/transparent"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -70,6 +70,7 @@
             android:layout_height="match_parent"
             android:padding="6dp"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:background="@android:color/transparent"/>

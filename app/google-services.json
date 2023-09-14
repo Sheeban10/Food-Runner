@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875460466209",
+    "project_id": "food-runner-f91ac",
+    "storage_bucket": "food-runner-f91ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875460466209:android:7bd0c79668341d8eb4b560",
+        "android_client_info": {
+          "package_name": "com.example.foodruner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC62c4Memcybasj9bZxiQmnw7wSaoxey5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
