@@ -16,4 +16,8 @@
     <string name="register">Register</string>
     <string name="enter_your_">Enter your registered mobile number and email below:</string>
     <string name="next">Next</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

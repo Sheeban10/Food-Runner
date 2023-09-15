@@ -1,4 +1,4 @@
-package com.example.foodruner
+package com.example.foodruner.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -18,7 +18,7 @@ class SplashActivity: AppCompatActivity() {
         setContentView(view)
 
         Handler().postDelayed({
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }, 2000)
     }
 

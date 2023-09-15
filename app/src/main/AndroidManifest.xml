@@ -13,7 +13,7 @@
         android:theme="@style/Theme.FoodRuner"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.foodruner.LoginActivity" />
-        <activity android:name="com.example.foodruner.SignupActivity" />
-        <activity android:name="com.example.foodruner.ForgotPasswordActivity" />
-        <activity android:name="com.example.foodruner.MainActivity" />
+        <activity android:name="com.example.foodruner.activity.LoginActivity" />
+        <activity android:name="com.example.foodruner.activity.SignupActivity" />
+        <activity android:name="com.example.foodruner.activity.ForgotPasswordActivity" />
+        <activity android:name="com.example.foodruner.activity.MainActivity" />
     </application>
 
 </manifest>

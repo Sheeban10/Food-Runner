@@ -1,4 +1,4 @@
-package com.example.foodruner
+package com.example.foodruner.activity
 
 import android.content.Intent
 import android.os.Bundle

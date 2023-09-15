@@ -1,4 +1,4 @@
-package com.example.foodruner
+package com.example.foodruner.activity
 
 import android.content.Context
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.foodruner.R
 import com.example.foodruner.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -40,6 +41,7 @@ class LoginActivity: AppCompatActivity(){
         etPassword = binding.etLoginPassword
         btnLogin = binding.btnLogin
 
+
         binding.btnLogin.setOnClickListener {
 
             val email = etEmail.text.toString()
@@ -62,12 +64,12 @@ class LoginActivity: AppCompatActivity(){
         }
 
         binding.tvForgotPw.setOnClickListener {
-            startActivity(Intent(this,ForgotPasswordActivity::class.java))
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
 
         }
 
         binding.tvSignUp.setOnClickListener {
-            startActivity(Intent(this,SignupActivity::class.java))
+            startActivity(Intent(this, SignupActivity::class.java))
         }
     }
 

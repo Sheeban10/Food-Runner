@@ -1,13 +1,14 @@
-package com.example.foodruner
+package com.example.foodruner.activity
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
-import androidx.activity.findViewTreeOnBackPressedDispatcherOwner
 import androidx.appcompat.app.AppCompatActivity
+import com.example.foodruner.R
 import com.example.foodruner.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -23,6 +24,7 @@ class SignupActivity: AppCompatActivity() {
     lateinit var etPassword : EditText
     lateinit var etConfirmPass: EditText
     lateinit var btnSignUp : Button
+    lateinit var sharedPreferences: SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +46,9 @@ class SignupActivity: AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        sharedPreferences = getSharedPreferences(getString(R.string.shared_preference), MODE_PRIVATE)
+
+
         btnBack.setOnClickListener {
             onBackPressed()
         }
@@ -60,8 +65,9 @@ class SignupActivity: AppCompatActivity() {
                 if (password == confirmPass){
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful){
-                            val intent = Intent(this,LoginActivity::class.java)
+                            val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
+                            savePreference()
                             finish()
                         }else{
                             Toast.makeText(this, "Create Account Failed", Toast.LENGTH_SHORT).show()
@@ -76,6 +82,14 @@ class SignupActivity: AppCompatActivity() {
             }
         }
 
+
+    }
+
+    fun savePreference(){
+        sharedPreferences.edit().putString("name", etName.toString()).apply()
+        sharedPreferences.edit().putString("email", etEmail.toString()).apply()
+        sharedPreferences.edit().putString("number", etNumber.toString()).apply()
+        sharedPreferences.edit().putString("address", etAddress.toString()).apply()
 
     }
 
