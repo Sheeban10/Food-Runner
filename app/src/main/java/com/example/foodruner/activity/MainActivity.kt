@@ -15,7 +15,10 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.foodruner.R
 import com.example.foodruner.databinding.ActivityMainBinding
+import com.example.foodruner.fragments.FaqFragment
+import com.example.foodruner.fragments.FavouritesFragment
 import com.example.foodruner.fragments.HomeFragment
+import com.example.foodruner.fragments.ProfileFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 
@@ -48,8 +51,8 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        openHome()
         setupToolBar()
+        openHome()
 
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(this@MainActivity, drawerLayout,
@@ -78,13 +81,40 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.profile ->{
 
+                    val fragment = ProfileFragment()
+                    val transaction = supportFragmentManager.beginTransaction()
+
+                    transaction.replace(R.id.frame, fragment)
+                    transaction.commit()
+                    supportActionBar?.title = "Profile"
+
+                    drawerLayout.closeDrawers()
+
                 }
 
                 R.id.favourites ->{
 
+                    val fragment = FavouritesFragment()
+                    val transaction = supportFragmentManager.beginTransaction()
+
+                    transaction.replace(R.id.frame, fragment)
+                    transaction.commit()
+                    supportActionBar?.title = "Favourites"
+
+                    drawerLayout.closeDrawers()
+
                 }
 
                 R.id.faq ->{
+
+                    val fragment = FaqFragment()
+                    val transaction = supportFragmentManager.beginTransaction()
+
+                    transaction.replace(R.id.frame, fragment)
+                    transaction.commit()
+                    supportActionBar?.title = "FAQs"
+
+                    drawerLayout.closeDrawers()
 
                 }
 

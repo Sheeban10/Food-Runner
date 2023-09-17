@@ -35,6 +35,7 @@ class LoginActivity: AppCompatActivity(){
 
         if (isLoggedIn){
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         } else setContentView(view)
 
         etEmail = binding.etEmail
@@ -47,7 +48,7 @@ class LoginActivity: AppCompatActivity(){
             val email = etEmail.text.toString()
             val password = etPassword.text.toString()
 
-                if (email.isNotBlank() && password.isNotBlank()){
+                if (email.isNotEmpty() && password.isNotEmpty()){
                     firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
                         if (it.isSuccessful){
                             savePreference()
