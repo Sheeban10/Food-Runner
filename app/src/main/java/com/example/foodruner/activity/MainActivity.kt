@@ -186,13 +186,14 @@ class MainActivity : AppCompatActivity() {
         navigationView.setCheckedItem(R.id.home)
     }
 
-//    override fun onBackPressed() {
-//        val fragment = supportFragmentManager.findFragmentById(R.id.frame)
-//
-//        when(fragment){
-//            !is HomeFragment -> openHome()
-//
-//            else ->super.onBackPressed()
-//        }
-//    }
+    override fun onBackPressed() {
+        val fragment = supportFragmentManager.findFragmentById(R.id.frame)
+
+        when(fragment){
+            !is HomeFragment -> openHome()
+
+            else ->super.onBackPressed()
+
+        }
+    }
 }

@@ -49,6 +49,7 @@ class LoginActivity: AppCompatActivity(){
             val password = etPassword.text.toString()
 
                 if (email.isNotEmpty() && password.isNotEmpty()){
+
                     firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
                         if (it.isSuccessful){
                             savePreference()
